@@ -2,7 +2,7 @@ import Header from "@/components/Header";
 import "../globals.css";
 import type { ReactNode } from "react";
 
-export default function Layout({ children }: { children: ReactNode }) {
+const Layout = ({ children }: { children: ReactNode }) => {
   return (
     <html lang="en">
       <body className="min-h-screen text-gray-400">
@@ -13,4 +13,5 @@ export default function Layout({ children }: { children: ReactNode }) {
       </body>
     </html>
   );
-}
+};
+export default Layout;

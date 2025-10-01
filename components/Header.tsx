@@ -1,6 +1,7 @@
-import { Link } from "lucide-react";
+import Link from "next/link";
 import Image from "next/image";
 import React from "react";
+import NavItems from "./NavItems";
 
 const Header = () => {
   return (
@@ -15,6 +16,10 @@ const Header = () => {
             className="h-8 w-auto cursor-pointer"
           />
         </Link>
+        <nav className="hidden sm:block">
+          <NavItems />
+        </nav>
+        {/* UserDropdown */}
       </div>
     </header>
   );
