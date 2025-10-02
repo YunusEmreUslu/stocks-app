@@ -4,7 +4,7 @@ import type { ReactNode } from "react";
 
 const Layout = ({ children }: { children: ReactNode }) => {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <body className="min-h-screen text-gray-400">
         <Header />
         <main>
